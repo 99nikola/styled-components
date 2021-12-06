@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     * {
-        font-family: DM Sans, sans-serif;
+        font-family: DM Sans, sans-serif !important;
     }
     #root {
         display: flex;
