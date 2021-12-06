@@ -1,20 +1,11 @@
-import Container from "./styled/Container.styled";
-import Placeholder from "./styled/Placeholder";
-import StyledHeader3 from "./styled/Header3.styled";
-import InfoText from "./styled/InfoText";
-import Label from "./styled/Label.styled";
-import RadioButton from "./styled/RadioButton.styled";
-import FlexContainer from "./styled/FlexContainer";
-import Input from "./styled/Input";
-import InputLabel from "./styled/InputLabel";
-import Button from "./styled/Button";
+import { Button, Container, FlexContainer, Header3, InfoText, Input, InputLabel, Label, Placeholder, RadioButton } from "./styled";
 
 const PaymentMethods = () => {
     return (
         <Container>
-            <StyledHeader3>
+            <Header3>
                 Choose Your Payment Method
-            </StyledHeader3>
+            </Header3>
 
             <Placeholder>
                 <RadioButton 
@@ -57,21 +48,21 @@ const PaymentMethods = () => {
                         </FlexContainer>
                         
                         <FlexContainer direction="column" margin="20px 20px 20px 0">
-                            <InputLabel htmlFor="card-number">Expiration</InputLabel>
-                            <Input id="card-number"/>
+                            <InputLabel htmlFor="card-expiration">Expiration</InputLabel>
+                            <Input id="card-expiration"/>
                         </FlexContainer>
                     </FlexContainer>
                     <FlexContainer>
                         <FlexContainer direction="column" margin="20px 20px 20px 0">
-                            <InputLabel htmlFor="card-number">Cardholder name</InputLabel>
-                            <Input id="card-number"/>
+                            <InputLabel htmlFor="card-holder">Cardholder name</InputLabel>
+                            <Input id="card-holder"/>
                         </FlexContainer>
                         
                         <FlexContainer align="flex-end" margin="20px 20px 20px 0">
                             <FlexContainer direction="column">
-                                <InputLabel htmlFor="card-number">Cvv code</InputLabel>
+                                <InputLabel htmlFor="card-cvv">Cvv code</InputLabel>
                                 <Input 
-                                    id="card-number"
+                                    id="card-cvv"
                                     width="100px"
                                 />
                             </FlexContainer>

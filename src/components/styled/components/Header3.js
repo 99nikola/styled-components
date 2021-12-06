@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledHeader3 = styled.h3`
+const Header3 = styled.h3`
     color: ${({ theme }) => theme.colors.heading};
     font-weight: 700;
     font-style: normal;
@@ -10,4 +10,4 @@ const StyledHeader3 = styled.h3`
     align-self: center;
 `;
 
-export default StyledHeader3;
+export default Header3;

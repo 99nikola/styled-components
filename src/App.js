@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import PaymentMethods from "./components/PaymentMethods";
-import GlobalStyles from "./components/styled/GlobalStyles";
+import { GlobalStyles } from "./components/styled";
 
 const theme = {
     colors: {
