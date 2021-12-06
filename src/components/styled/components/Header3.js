@@ -7,7 +7,8 @@ const Header3 = styled.h3`
     font-size: 42px;
     line-height: 52px;
     letter-spacing: -0.4px;
-    align-self: center;
+
+    margin: 10px 0;
 `;
 
 export default Header3;

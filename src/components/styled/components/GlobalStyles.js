@@ -2,13 +2,12 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     * {
-        font-family: DM Sans, sans-serif !important;
-        margin: 0 !important;
+        font-family: DM Sans, sans-serif;
     }
     #root {
         display: flex;
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }

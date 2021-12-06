@@ -11,6 +11,7 @@ const Placeholder = styled.div`
 
     display: flex;
     padding: 30px;
+    margin-bottom: 20px;
 
     &:focus-within {
         border-color: ${({ theme }) => theme.colors.primary};
