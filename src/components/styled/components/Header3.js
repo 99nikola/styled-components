@@ -8,7 +8,7 @@ const Header3 = styled.h3`
     line-height: 52px;
     letter-spacing: -0.4px;
 
-    margin: 10px 0;
+    margin: 20px 0;
 `;
 
 export default Header3;
