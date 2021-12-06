@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "styled-components";
+import PaymentMethods from "./components/PaymentMethods";
+import GlobalStyles from "./components/styled/GlobalStyles";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const theme = {
+    colors: {
+        primary: "#25DAC5",
+        heading: "#1E0E62",
+        text: "rgba(21, 20, 57, 0.4)",
+        background: "#FFFFFF",
+        border: "#EBEAED"
+    }
+}
+
+const App = () => {
+    return (
+        <ThemeProvider theme={theme}>
+            <GlobalStyles />
+            <PaymentMethods />
+        </ThemeProvider>
+    );
 }
 
 export default App;
