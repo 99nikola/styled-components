@@ -9,6 +9,7 @@ const Container = styled.div`
 
     max-width: 1400px;
     max-height: 970px;
+
 `;
 
 export default Container;

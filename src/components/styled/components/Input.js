@@ -19,9 +19,8 @@ const Input = styled.input`
     color: rgba(21, 20, 57, 0.4);
 
     &:focus {
-        outline: 2px solid ${({ theme }) => theme.colors.primary}
+        outline: 2px solid ${({ theme }) => theme.colors.heading};
     }
-
 `;
 
 export default Input;
