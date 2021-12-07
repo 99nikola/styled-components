@@ -9,7 +9,7 @@ export function checkLuhn (cardNumber) {
         return "Invalid credit card number";
 
     let sum = 0;
-    let remainder = Number.parseInt(cardNumber[cardNumber.length-1]) % 2;
+    let remainder = (cardNumber.length-1) % 2;
 
     for (let i=cardNumber.length-1; i>=0; i--) {
         let digit = Number.parseInt(cardNumber[i]);
@@ -20,9 +20,10 @@ export function checkLuhn (cardNumber) {
         } 
         sum += digit;
     }
-    
-    if (sum % 10 !== 0)
-        return "Invalid credit card number";
+
+    const luhn = sum % 10;    
+    if (luhn !== 0)
+        return `Warning: Next check digit: ${10 - luhn}`;
         
     return true;
 }
