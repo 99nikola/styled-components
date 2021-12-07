@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import PaymentMethods from "./components/PaymentMethods";
+import PaymentMethods from "./components/templates/PaymentMethods";
 import { GlobalStyles } from "./components/styled";
 
 const theme = {
