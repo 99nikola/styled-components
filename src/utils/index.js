@@ -3,16 +3,16 @@ export function isNaturalNumber(input) {
 	return (Number.isInteger(number) && number > 0);
 }
 
-
 export function checkLuhn (cardNumber) {
-    if (!isNaturalNumber(cardNumber)) 
+    const input = cardNumber.trim();
+    if (!isNaturalNumber(input)) 
         return "Invalid credit card number";
 
     let sum = 0;
-    let remainder = (cardNumber.length-1) % 2;
+    let remainder = (input.length-1) % 2;
 
-    for (let i=cardNumber.length-1; i>=0; i--) {
-        let digit = Number.parseInt(cardNumber[i]);
+    for (let i=input.length-1; i>=0; i--) {
+        let digit = Number.parseInt(input[i]);
         if (i % 2 === remainder) {
             digit *= 2;
             if (digit >= 10) 
