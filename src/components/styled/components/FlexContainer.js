@@ -6,6 +6,7 @@ const FlexContainer = styled.div`
     justify-content: ${({ justify }) => justify || "flex-start"};
     align-items: ${({ align }) => align || "flex-start"};
     margin: ${({ margin }) => margin || "0"};
+    border: ${({ border }) => border || "0"};
 `;
 
 export default FlexContainer;

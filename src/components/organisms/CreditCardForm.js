@@ -101,7 +101,7 @@ const CreditCardForm = ({ onSubmit, onError, handlePaymentChange, paymentMethod 
                                 />
                         </FlexContainer>
                         
-                        <FlexContainer align="flex-end" margin="20px 20px 20px 0">
+                        <FlexContainer align="flex-start" margin="20px 20px 20px 0">
                             <FlexContainer direction="column">
                                 <InputLabel htmlFor="card-cvv">Cvv code</InputLabel>
                                 <Controller 
@@ -119,7 +119,9 @@ const CreditCardForm = ({ onSubmit, onError, handlePaymentChange, paymentMethod 
                                 )}
                                 />
                             </FlexContainer>
-                            {SubmitButton}
+                            <FlexContainer margin="33px 0 0 0">
+                                {SubmitButton}
+                            </FlexContainer>
                         </FlexContainer>
                     </FlexContainer>
                 </form>
