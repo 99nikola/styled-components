@@ -1,6 +1,6 @@
 import { memo, useMemo } from "react";
 import { Controller, useForm } from "react-hook-form";
-import { requiredRule, creditCardRule } from "../../rules";
+import { requiredRule, creditCardRule, creditExpirationRule, creditCvvRule } from "../../rules";
 import { Button, FlexContainer, InfoText, Input, InputLabel, Label, Placeholder, RadioButton } from "../styled";
 import { EPaymentMethods } from "../templates/PaymentMethods";
 
@@ -71,7 +71,7 @@ const CreditCardForm = ({ onSubmit, onError, handlePaymentChange, paymentMethod 
                             <Controller 
                                 name="cardExpiration"
                                 control={form.control}
-                                rules={requiredRule}
+                                rules={creditExpirationRule}
                                 render={({ field, fieldState }) => (
                                     <Input 
                                         {...field}
@@ -107,7 +107,7 @@ const CreditCardForm = ({ onSubmit, onError, handlePaymentChange, paymentMethod 
                                 <Controller 
                                     name="cardCVV"
                                     control={form.control}
-                                    rules={requiredRule}
+                                    rules={creditCvvRule}
                                     render={({ field, fieldState }) => (
                                         <Input
                                             {...field} 
