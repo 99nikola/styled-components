@@ -3,6 +3,7 @@ import { Controller, useForm } from "react-hook-form";
 import { requiredRule, creditCardRule, creditExpirationRule, creditCvvRule } from "../../rules";
 import { Button, FlexContainer, InfoText, Input, InputLabel, Label, Placeholder, RadioButton } from "../styled";
 import { EPaymentMethods } from "../templates/PaymentMethods";
+import CreditCards from "../molecules/CreditCards";
 
 const CreditCardForm = ({ onSubmit, onError, handlePaymentChange, paymentMethod }) => {
 
@@ -41,11 +42,17 @@ const CreditCardForm = ({ onSubmit, onError, handlePaymentChange, paymentMethod 
                 onChange={handleChange}
                 />
             <FlexContainer direction="column">
-                <Label htmlFor="credit-card">Credit Card</Label>
+                <FlexContainer justify="space-between" width="96%">
+                    <FlexContainer direction="column">
+                        <Label htmlFor="credit-card">Credit Card</Label>
 
-                <InfoText>
-                    Safe money transfer using your bank account.
-                </InfoText>
+                        <InfoText>
+                            Safe money transfer using your bank account.
+                        </InfoText>
+                    </FlexContainer>
+
+                    <CreditCards />
+                </FlexContainer>
 
                 <form onSubmit={form.handleSubmit(onSubmit, onError)}>
                     <FlexContainer>

@@ -7,6 +7,9 @@ const FlexContainer = styled.div`
     align-items: ${({ align }) => align || "flex-start"};
     margin: ${({ margin }) => margin || "0"};
     border: ${({ border }) => border || "0"};
+    width: ${({ width }) => width || "auto"};
+    height: ${({ height }) => height || "auto"};
+    padding: ${({ padding }) => padding || "0"};
 `;
 
 export default FlexContainer;

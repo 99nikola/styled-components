@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import PaymentMethods from "./components/templates/PaymentMethods";
 import { GlobalStyles } from "./components/styled";
 
-const theme = {
+export const theme = {
     colors: {
         primary: "#25DAC5",
         heading: "#1E0E62",
