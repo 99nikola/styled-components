@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-const Placeholder = styled.div`
+const Placeholder = styled.label`
     background-color: ${({ theme }) => theme.colors.background};
     width: 100%;
 
@@ -16,6 +16,8 @@ const Placeholder = styled.div`
     &:focus-within {
         border-color: ${({ theme }) => theme.colors.primary};
     }
+
+    cursor: pointer;
 `;
 
 export default Placeholder;

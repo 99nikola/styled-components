@@ -2,7 +2,6 @@ import { memo, useMemo } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { requiredRule } from "../../rules";
 import { RadioButton, Placeholder, FlexContainer, Label, InfoText, Input, Button } from "../styled";
-import { InputField } from "../styled/components/Input";
 import { EPaymentMethods } from "../templates/PaymentMethods";
 
 const PaypalForm = ({ onSubmit, onError, handlePaymentChange, paymentMethod }) => {
@@ -30,7 +29,7 @@ const PaypalForm = ({ onSubmit, onError, handlePaymentChange, paymentMethod }) =
     }
 
     return (
-        <Placeholder>
+        <Placeholder htmlFor="paypal">
             <RadioButton 
                 type="radio"
                 name="payment-method"

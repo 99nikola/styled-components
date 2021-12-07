@@ -32,7 +32,7 @@ const CreditCardForm = ({ onSubmit, onError, handlePaymentChange, paymentMethod 
     }
 
     return (
-        <Placeholder>
+        <Placeholder htmlfor="credit-card">
             <RadioButton 
                 type="radio"
                 name="payment-method"
