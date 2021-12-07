@@ -16,7 +16,7 @@ export function checkLuhn (cardNumber) {
         if (i % 2 === remainder) {
             digit *= 2;
             if (digit >= 10) 
-                digit = (digit % 10) + Math.floor(digit / 10);
+                digit -= 9;
         } 
         sum += digit;
     }
