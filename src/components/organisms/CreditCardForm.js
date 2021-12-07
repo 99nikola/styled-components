@@ -42,7 +42,7 @@ const CreditCardForm = ({ onSubmit, onError, handlePaymentChange, paymentMethod 
                 onChange={handleChange}
                 />
             <FlexContainer direction="column">
-                <FlexContainer justify="space-between" width="96%">
+                <FlexContainer justify="space-between" width="100%">
                     <FlexContainer direction="column">
                         <Label htmlFor="credit-card">Credit Card</Label>
 
